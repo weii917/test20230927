@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .text-red {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h3>
+            單行文字
+        </h3>
+        <p><input type="text" value="555" name="text"></p>
+    </div>
+    <div class="container">
+        <h3>
+            數字
+        </h3>
+        <p><input type="number" value="123" name="number"></p>
+    </div>
+    <div class="container">
+        <h3>
+            日期
+        </h3>
+        <p><input type="date" value="2023-01-05" name="date"></p>
+    </div>
+    <div class="container">
+        <h3 class="text-red">下拉選單</h3>
+        <p><select name="select" id="">
+                <option value="">下拉選單</option>
+                <option value="s">s1</option>
+                <option value="s">s2</option>
+                <option value="s">s3</option>
+                <option value="s">s4</option>
+            </select></p>
+    </div>
+    <div class="container">
+        <h3 class="text-red">radio單選</h3>
+        <p>
+            <input type="radio" name="radio" id="item1">
+            <label for="item1">item1</label>
+            <input type="radio" name="radio" id="item2">
+            <label for="item2">item2</label>
+            <input type="radio" name="radio" id="item3">
+            <label for="item3">item3</label>
+        </p>
+    </div>
+    <div class="container">
+        <h3 class="text-red">checkbox單選</h3>
+
+        <!-- []代表陣列array 多選 -->
+        <input type="checkbox" name="myCheckbox[]" id="checke1">
+        <label for="check1">html</label>
+        <input type="checkbox" name="myCheckbox[]" id="checke2">
+        <label for="check2">CSS</label>
+        <input type="checkbox" name="myCheckbox[]" id="checke3">
+        <label for="check3">php</label>
+    </div>
+
+    <div class="container">
+        <h3>
+            reset
+        </h3>
+        <input type="reset" value="reset">
+    </div>
+
+    <div class="container">
+        <h3>
+            submit
+        </h3>
+        <input type="submit" value="submit">
+    </div>
+    <div class="container">
+        <h3>
+            password
+        </h3>
+        <input type="password">
+    </div>
+    <div class="container">
+        <h3>
+            textarea
+        </h3>
+        <!-- pre 文字會根據這裡面的排版 -->
+        <textarea name="myTextarea" id="" cols="50" rows="10">
+11111
+            222 3
+        </textarea>
+    </div>
+</body>
+
+</html>
