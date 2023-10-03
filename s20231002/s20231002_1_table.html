@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 80%;
+            margin: auto;
+            text-align: center;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        table,
+        tr,
+        td {
+            border: 2px solid black;
+            border-collapse: collapse;
+        }
+
+        td {
+            padding: 10px;
+            vertical-align: text-top;
+        }
+
+
+
+        .text-red {
+            font-size: 32px;
+            color: red;
+            margin: 0%;
+
+        }
+
+        .text-left {
+            text-align: left;
+            padding-left: 20px;
+        }
+
+        h2 {
+            margin: 0;
+            font-size: 48px;
+        }
+
+        p {
+            padding: 10px;
+            font-size: 32px;
+        }
+
+        .h-70 {
+            height: 70vh;
+        }
+
+        .w-40 {
+            width: 40%;
+        }
+
+        .h-20 {
+            height: 20vh;
+        }
+
+        .h-80 {
+            height: 80vh;
+        }
+
+        .w-50 {
+            width: 50%;
+        }
+
+        .w-25 {
+            width: 25%;
+        }
+
+        .w-30 {
+            width: 30%;
+        }
+
+        .bg-org {
+            background-color: rgb(255, 217, 201);
+        }
+
+        .bg-red {
+            background-color: rgb(255, 209, 216);
+        }
+
+        .bg-blue {
+            background-color: rgb(219, 240, 247);
+        }
+
+        .bg-green {
+            background-color: rgb(210, 240, 210);
+        }
+        .top {
+            float: right;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- navigation -->
+        <div class="nav">
+            <a href="#item1">康乃爾筆記法</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="#item2">東大筆記法</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="#item3">麥肯錫筆記法</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+        <div id="item1"></div>
+        <a href="#" class="top">top</a>
+        <h1>康乃爾筆記法</h1>
+        <table>
+            <tr>
+                <td class="h-70 w-40 bg-blue">
+                    <h2>B</h2>
+                    <h3 class="text-red">整理</h3>
+                    <p class="text-left">Lorem ipsum, dolor sit amiquis consequatur assumenda amet magni rerum obcaecati
+                        ut et
+                        architecto?</p>
+                </td>
+                <td class="h-70 bg-green">
+                    <h2>A</h2>
+                    <h3 class="text-red">筆記</h3>
+                    <p class="text-left">Lorem ipsum, dolor sit amiquis consequatur assumenda amet magni rerum obcaecati
+                        ut et
+                        architecto?</p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" class="h-20 bg-red">
+                    <h2 class="text-left">C</h2>
+                    <h3 class="text-red text-left">總結</h3>
+                    <p>Lorem ipsum, amet magni rerum obcaecati ut et
+                        architecto?</p>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="container">
+        <div id="item2"></div>
+        <a href="#" class="top">top</a>
+        <h1>東大筆記法</h1>
+        <table>
+            <tr>
+                <td class="h-80 w-50 bg-green">
+                    <h2>A</h2>
+                    <h3 class="text-red">筆記</h3>
+                    <p>Lorem ipsum, amet magni rerum obcaecati ut et
+                        architecto?</p>
+                </td>
+                <td class="w-25 bg-blue">
+                    <h2>B</h2>
+                    <h3 class="text-red">整理</h3>
+                    <p>Lorem ipsum, amet magni rerum obcaecati ut et
+                        architecto?</p>
+                </td>
+                <td class="w-25 bg-red">
+                    <h2>C</h2>
+                    <h3 class="text-red">總結</h3>
+                    <p>Lorem ipsum, amet magni rerum obcaecati ut et
+                        architecto?</p>
+                </td>
+            </tr>
+        </table>
+        <hr>
+    </div>
+    <div class="container">
+        <div id="item3"></div>
+        <a href="#" class="top">top</a>
+        <h1>麥肯錫筆記法</h1>
+        <table>
+            <tr>
+                <td colspan="3" class="h-20 bg-org">
+                    <h3 class="text-red">重點問題</h3>
+                    <p>如何寫出好筆記?</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="h-70 w-30 bg-green">
+                    <h2>A</h2>
+                    <h3 class="text-red">現狀</h3>
+                </td>
+                <td class="h-70 w-30 bg-blue">
+                    <h2>B</h2>
+                    <h3 class="text-red">解釋</h3>
+                </td>
+                <td class="h-70 w-30 bg-red">
+                    <h2>C</h2>
+                    <h3 class="text-red">行動</h3>
+                </td>
+            </tr>
+        </table>
+        <hr>
+    </div>
+
+
+</body>
+
+</html>
