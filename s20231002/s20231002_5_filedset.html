@@ -1,63 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-        .container {
-            width: 80%;
-            margin: auto;
-            height: 100%;
-        }
+      .container {
+        background-color: rgb(247, 236, 235);
+        width: 50%;
+        margin: auto;
+        color: rgb(84, 88, 113);
+      }
+      /* 設定文字之間的距離，文字大小 */
+      div {
+        padding: 10px;
+        font-size: 20px;
+      }
+      /* input方框顏色 方框裡面字型大小 間距*/
+      input[type="text"],
+      input[type="date"],
+      input[type="reset"],
+      input[type="submit"],
+      textarea {
+        color: rgb(84, 88, 88);
+        font-size: 20px;
+        padding: 10px;
+        border-color: rgb(246, 235, 234);
+      }
+      /* 點會變其他顏色 */
+      input[type="text"]:focus {
+        background-color: rgb(235, 207, 205);
+      }
+
+      input[type="reset"],
+      input[type="submit"] {
+        color: rgb(255, 255, 255);
+        font-size: 20px;
+        padding: 10px;
+        border-color: rgb(246, 235, 234);
+        border-radius: 30px;
+      }
+
+      div select {
+        padding: 10px;
+        color: rgb(84, 88, 88);
+        background-color: rgb(235, 208, 206);
+        font-size: 20px;
+      }
+      /* 重置 提交的置中設定 */
+      .bt-container {
+        text-align: center;
+      }
+      /* 重置 提交背景文字寬度 */
+      .bt {
+        background-color: rgb(84, 88, 88);
+        color: rgb(243, 243, 243);
+        width: 30%;
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="container">
-        <fieldset>
-            <legend>hr報表</legend>
-            <label for="">姓名:</label>
-            <input type="text" value="" name="myName">
-            <br>
-            <label for="">電話:</label>
-            <input type="text" value="" name="myNumber">
-            <br>
-            <label for="">地址:</label>
-            <input type="text" name="myAddress" id="">
-            <p>下拉選單</p>
-            <p> <select name="myItem" id="">
-                    <option value="">item</option>
-                    <option value="">item1</option>
-                    <option value="">item2</option>
-                    <option value="">item3</option>
-                </select></p>
+      <fieldset>
+        <legend>HR</legend>
+        <form action="">
+          <div><label for="name">姓名:</label></div>
+          <div>
+            <input type="text" value="" name="myName" id="name" required />
+          </div>
 
-            <p>單選</p>
-            <p><input type="radio" name="myRadio" id="item1">
-                <label for="item1">item1</label>
-                <input type="radio" name="myRadio" id="item2">
-                <label for="item2">item2</label>
-                <input type="radio" name="myRadio" id="item3">
-                <label for="item3">item3</label>
-            </p>
-            <p>多選語言</p>
-            <p>
-                <input type="checkbox" name="myCehckbox[]" id="check1">
-                <label for="check1">item1</label>
-                <input type="checkbox" name="myCehckbox[]" id="check2">
-                <label for="check2">item2</label>
-                <input type="checkbox" name="myCehckbox[]" id="check3">
-                <label for="check3">item3</label>
-            </p>
-            <p>備註</p>
-            <p><textarea name="myTextarea" id="" cols="30" rows="10"></textarea></p>
-        
-            <input type="reset" value="重整">            
-            <input type="submit" value="提交">
-        </fieldset>
+          <div><label for="phone">電話:</label></div>
+          <div>
+            <input
+              type="text"
+              value=""
+              name="myPhone"
+              id="phone"
+              minlength="8"
+              maxlength="10"
+              required
+            />
+          </div>
+          <div><label for="date">生日:</label></div>
+          <div><input type="date" name="myDate" id="date" /></div>
+          <div><label for="address">地址:</label></div>
+          <div>
+            <input
+              type="text"
+              size="50"
+              name="myAddress"
+              id="address"
+              required
+            />
+          </div>
+
+          <div>Team</div>
+          <div>
+            <select name="myItem" id="" required>
+              <option value="">請選擇</option>
+              <option value="">A組</option>
+              <option value="">B組</option>
+              <option value="">C組</option>
+            </select>
+          </div>
+
+          <div>性別</div>
+          <div>
+            <input type="radio" name="myRadio" id="item1" required />
+            <label for="item1">男生</label>
+            <input type="radio" name="myRadio" id="item2" />
+            <label for="item2">女生</label>
+          </div>
+          <div>語言</div>
+          <div>
+            <input type="checkbox" name="myCehckbox[]" id="check1" />
+            <label for="check1">HTML</label>
+            <input type="checkbox" name="myCehckbox[]" id="check2" />
+            <label for="check2">CSS</label>
+            <input type="checkbox" name="myCehckbox[]" id="check3" />
+            <label for="check3">PHP</label>
+          </div>
+          <div>備註</div>
+          <div>
+            <textarea name="myTextarea" id="" cols="70" rows="10"></textarea>
+          </div>
+          <div class="bt-container">
+            <input class="bt" type="reset" value="重整" />
+            <input class="bt" type="submit" value="提交" />
+          </div>
+        </form>
+      </fieldset>
     </div>
-</body>
-
+  </body>
 </html>

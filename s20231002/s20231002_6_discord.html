@@ -1,35 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Discord</title>
+    <style>
+      .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+        width: 80%;
+        height: 700px;
+        background-color: rgb(87, 100, 242);
+        margin: auto;
+      }
+      .box {
+        width: 50%;
+        border: 1px solid black;
+        border-radius: 10px;
+        margin: auto;
+        background-color: rgb(49, 50, 56);
+        text-align: center;
+      }
+      h2 {
+        text-align: center; /* 水平居中 */
+      }
+      h3 {
+        color: white;
+      }
+      h4 {
+        color: rgb(201, 201, 201);
+      }
+      .w-60 {
+        text-align: center;
+        width: 60%;
+      }
+      .w-40 {
+        width: 40%;
+      }
+      /* input 寬度 文字設定 */
+      input[type="text"],
+      input[type="password"] {
+        padding: 10px;
+        font-size: 1rem;
+        color: white;
+        background-color: rgb(30, 31, 35);
+        width: 90%;
+        border: none;
+      }
+      /* submit寬度 文字設定 */
+      input[type="submit"] {
+        /* margin-top: 50px; */
+        padding: 10px;
+        font-size: 1rem;
+        color: white;
+        background-color: rgb(87, 100, 242);
+        width: 95%;
+      }
+      input[type="reset"] {
+        margin-top: 50px;
+        padding: 10px;
+        font-size: 1rem;
+        color: white;
+        background-color: rgb(87, 100, 242);
+        width: 95%;
+      }
+      /* 電子郵件密碼文字設定 */
+      .font-gray {
+        margin: 10px;
 
-<body>
+        width: 90%;
+        text-align: left;
+        color: rgb(201, 201, 201);
+      }
+    </style>
+  </head>
+
+  <body>
     <div class="container">
-        <h3>Form</h3>
-        <div class="box">
-            <table>
-                <tr>
-                    <td>
-                        <form action="">
-                            <h3>歡迎回來!</h3>
-                            <h4>我們很高興又見到您</h4>
-                            <p><label for="">電子郵件或電話號碼</label></p>
-                            <p><input type="text" name="" id=""></p>                            
-                            <p><label for="">密碼</label></p>
-                            <p><input type="password" name="" id=""></p>
-                            <input type="submit" value="登入">
+      <h2>Form</h2>
+      <div class="box">
+        <table>
+          <tr>
+            <td class="w-60">
+              <h3>歡迎回來 !</h3>
+              <h4>我們很高興又見到您了 !</h4>
+              <form action="">
+                <div class="font-gray">
+                  <label for="">&nbsp;&nbsp;電子郵件或電話號碼</label>
+                </div>
+                <div><input type="text" name="" id="" /></div>
+                <div class="font-gray">
+                  <label for="">&nbsp;&nbsp;密碼</label>
+                </div>
 
-                        </form>
-                    </td>
-                    <td><img src="./p1.png" alt=""></td>
-                </tr>
-            </table>
-        </div>
+                <div><input type="password" name="" id="" /></div>
+                <input type="reset" value="重置" />
+                <input type="submit" value="登入" />
+              </form>
+            </td>
+            <td class="w-40"><img src="./p1.png" alt="" /></td>
+          </tr>
+        </table>
+      </div>
     </div>
-</body>
-
+  </body>
 </html>
