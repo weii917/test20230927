@@ -1,241 +1,284 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-        * {
-            margin: 0;
-            /* 不會超出格子 */
-            box-sizing: border-box;
-        }
+      * {
+        margin: 0;
+        /* 不會超出格子 */
+        box-sizing: border-box;
+      }
+      /* body背景顏色 */
+      body {
+        background-color: cornsilk;
+      }
+      /* 導覽列寬高設定 ，fixed固定z-index: 5 設置才會在最上層 */
+      .nav {
+        width: 100%;
+        height: 8vh;
+        background-color: rgb(204, 174, 131);
+        padding: 1rem 9rem;
+        position: fixed; /* 固定 */
+        z-index: 5;
+      }
+      /* 連結樣式 */
+      a {
+        /* margin: auto; */
+        color: rgb(53, 39, 16);
+        text-decoration: none;
+        font-size: 2rem;
+        padding-left: 3rem;
+      }
+      /* 連結樣式移動上去改變顏色 */
+      a:hover {
+        color: rgb(189, 126, 75);
+      }
+      /* container盒子的高度95vh 寬度 自動對其置中 */
+      .container {
+        height: 95vh;
+        width: 80%;
+        margin: auto;
+        background-size: cover;
+        /* background-color: aquamarine; */
+      }
+      .box {
+        width: 100%;
+        height: 100%;
+        /* background-color: white; */
+      }
 
-        body {
-            width: 100%;
-            height: 95vh;
-            margin: auto;
-            background-color: cornsilk;
-            /* background-image: url("./images/0501.png");             */
-        }
+      .box1 {
+        padding: 15rem 0rem 15rem 0rem;
+        /* background-image: url("./images/0501.png"); */
+        position: relative;
+        /* background-color: red; */
+      }
+      .box1::after {
+        background-image: url("./images/0501.png");
+        background-size: cover;
+        /* width: 100%;
+        height: 100%; */
+        content: "";
+        opacity: 0.4;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        top: 0;
+        z-index: -1;
+      }
 
-        .nav {
-            width: 100%;
-            height: 8vh;
-            background-color: rgb(204, 174, 131);
-            padding: 1rem 9rem;
-             position: fixed;/* 固定 */
+      .box2 {
+        /* height: 70vh; */
+        /* background-image: url("https://picsum.photos/id/24/1024/768"); */
+        background-size: cover;
+        position: relative;
+      }
+      /* 背景透明化不影響全部的用法 */
+      .box2::after {
+        background-image: url("https://picsum.photos/id/24/1024/768");
+        background-size: cover;
+        /* width: 100%;
+        height: 100%; */
+        content: "";
+        opacity: 0.3;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        top: 0;
+        z-index: -1;
+      }
 
-        }
+      .box3 {
+        /* background-image: url("./images/0502.png"); */
+        background-size: cover;
+        position: relative;
+      }
+      /* 背景透明化不影響全部的用法 */
+      .box3::after {
+        background-image: url("./images/0502.png");
+        background-size: cover;
+        /* width: 100%;
+        height: 100%; */
+        content: "";
+        opacity: 0.5;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        top: 0;
+        z-index: -1;
+      }
 
-        a {
-            margin: auto;
-            color: rgb(53, 39, 16);
-            text-decoration: none;
-            font-size: 2rem;
-            padding-left: 3rem;
-        }
+      table,
+      tr,
+      td {
+        /* border: 1px solid black; */
+        text-align: center;
+      }
+      table {
+        width: 100%;
+        height: 100%;
+        /* background-color: blue; */
+      }
+      td {
+        /* background-color: rgb(0, 255, 136); */
+        width: 33%;
+      }
 
-        a:hover {
+      h3 {
+        background-color: rgb(134, 117, 85);
+        border-radius: 60px 20px;
+        color: rgb(255, 255, 255);
+        font-size: 2rem;
+      }
 
-            color: rgb(189, 126, 75)
-        }
+      h4 {
+        /* margin-bottom: 1rem; */
+        padding: 1rem;
+        font-size: 1.2rem;
+        border-radius: 70px 10px;
+        background-color: rgb(134, 117, 85);
+        color: rgb(236, 233, 228);
+      }
 
-        .container {
-            width: 80%;
-            margin: auto;
-            background-size: cover;
-        }
+      p {
+        color: rgba(71, 54, 27, 0.747);
+        font-size: 1.2rem;
+        background-color: hwb(33 78% 0%);
+        border-radius: 60px 20px;
+        padding: 0.5rem;
+      }
 
-        .box1 {
-            height: 90vh;
-            padding: 10rem 0rem 0rem;
-            background-image: url("./images/0501.png");
-        }
+      img {
+        width: 90%;
+        height: 70%;
+        opacity: 1;
+        border-radius: 20px 60px 20px;
+      }
 
-        .box2 {
-            background-image: url("https://picsum.photos/id/24/1024/768");
-            background-size: cover;
-        }
+      iframe {
+        width: 100%;
+        height: 60%;
+      }
 
-        .box3 {
-            height: 90vh;
-            padding: 10rem 0rem 0rem;
-            background-image: url("./images/0502.png");
-            background-size: cover;
-        }
-
-        table,
-        tr,
-        td {
-            width: 100%;
-            /* border: 1px solid black; */
-            text-align: center;
-        }
-
-        .box1 table td {
-            width: 33%;
-            height: 100%;
-        }
-
-        .box2 table td {
-            margin: auto;
-            width: 45%;
-            height: 70vh;
-        }
-
-        .box3 table td {
-            margin: auto;
-            width: 45%;
-            height: 60vh;
-            align-items: center;
-        }
-
-        h3 {
-            background-color: rgb(134, 117, 85);
-            border-radius: 60px 20px;
-            color: rgb(255, 255, 255);
-            font-size: 2rem;
-
-        }
-
-        h4 {
-            padding: 1rem;
-            font-size: 1.2rem;
-            border-radius: 70px 10px;
-            background-color: rgb(134, 117, 85);
-            color: rgb(236, 233, 228);
-        }
-
-        p {
-            color: rgba(71, 54, 27, 0.747);
-            font-size: 1.2rem;
-            background-color: hwb(33 78% 0%);
-            border-radius: 60px 20px;
-            padding: 1rem;
-
-        }
-
-        img {
-            width: 90%;
-            height: 90%;
-            opacity: 1;
-            border-radius: 20px 60px 20px;
-        }
-
-        /* .h-50 {
-            background-color: blue;
-            height: 50vh;
-        } */
-
-        iframe {
-            width: 90%;
-            height: 80%;
-        }
-
-        #top {
-            position: fixed;
-            right: 50px;
-            bottom: 50px;
-        }
-        #icon{                        
-            width: 30px;
-            margin-left:20px
-        }
+      #top {
+        position: fixed;
+        right: 50px;
+        bottom: 50px;
+      }
+      #icon {
+        width: 30px;
+        margin-left: 20px;
+      }
     </style>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <div class="nav">
-        <a href="#"><img src="./images/coffee-beans.png" alt="" id="icon"></a>        
-        <a href="#image">Photo</a>
-        <a href="#youtube">Youtube</a>
-        <a href="#google">Goolge Map</a>
-
+      <a href="#"><img src="./images/coffee-beans.png" alt="" id="icon" /></a>
+      <a href="#image">Photo</a>
+      <a href="#youtube">Youtube</a>
+      <a href="#google">Goolge Map</a>
     </div>
     <div id="image"></div>
-    <div class="container box1">
+    <div class="container">
+      <div class="box box1">
         <table>
-            <tr>
-                <td class="w-30">
-                    <h4>Lorem ipsum dolor sit.</h4>
-                    <img src="./images/0401.jpg" alt="">
-                </td>
-                <td class="w-30">
-                    <h4>Lorem ipsum dolor sit.</h4><img src="./images/0402.jpg" alt="">
-                </td>
-                <td class="w-30">
-                    <h4>Lorem ipsum dolor sit.</h4><img src="./images/0403.jpg" alt="">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p>orem. placeat nostrum, harum Lorem. placeat nostrum, harum . Reiciendis perferendis</p>
-                </td>
-                <td>
-                    <p>ipsum dolor sit amet,orem. placeat nostrum, harum consectetur adipisicing elit</p>
-                </td>
-                <td>
-                    <p>uptate nostrum, orem. placeat nostrum, harum magnam omnis, nihil eaque quaerat</p>
-                </td>
-            </tr>
+          <tr>
+            <td>
+              <h4>Lorem ipsum dolor sit.</h4>
+              <img src="./images/0401.jpg" alt="" />
+              <p>
+                orem. placeat nostrum, harum Lorem. placeat nostrum, harum .
+                Reiciendis perferendis
+              </p>
+            </td>
+            <td>
+              <h4>Lorem ipsum dolor sit.</h4>
+              <img src="./images/0402.jpg" alt="" />
+              <p>
+                ipsum dolor sit amet,orem. placeat nostrum, harum consectetur
+                adipisicing elit
+              </p>
+            </td>
+            <td>
+              <h4>Lorem ipsum dolor sit.</h4>
+              <img src="./images/0403.jpg" alt="" />
+              <p>
+                uptate nostrum, orem. placeat nostrum, harum magnam omnis, nihil
+                eaque quaerat
+              </p>
+            </td>
+          </tr>
         </table>
+      </div>
     </div>
-    <br>
+    <br />
     <div id="youtube"></div>
     <div class="container">
-        <div class="box2">
-            <table>
-                <tr>
-                    <td>
-                        <h3>Youtube iframe</h3>
-
-                        <iframe width="" height="" src="https://www.youtube.com/embed/Y1t1WytP4_0?si=79C7qiLculmLIZl-"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowfullscreen></iframe>
-                    </td>
-                    <td>
-                        <h4>Introducing iPhone 15 | WOW | Apple</h4>
-                        <p>Now with Dynamic Island. A new 48MP Main camera. 2x Telephoto. Next-generation portraits.
-                            USB-C.
-                            All-day
-                            battery life. Aluminum design. Durable color-infused glass. Ceramic Shield. Water
-                            resistance.
-                            Five new
-                            colors. iPhone 15 is here. And totally jam-packed. WOW.</p>
-                    </td>
-                </tr>
-            </table>
-        </div>
-        <br>
+      <div class="box box2">
+        <table>
+          <tr>
+            <td>
+              <h3>Youtube iframe</h3>
+              <iframe
+                width=""
+                height=""
+                src="https://www.youtube.com/embed/Y1t1WytP4_0?si=79C7qiLculmLIZl-"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </td>
+            <td>
+              <h4>Introducing iPhone 15 | WOW | Apple</h4>
+              <p>
+                Now with Dynamic Island. A new 48MP Main camera. 2x Telephoto.
+                Next-generation portraits. USB-C. All-day battery life. Aluminum
+                design. Durable color-infused glass. Ceramic Shield. Water
+                resistance. Five new colors. iPhone 15 is here. And totally
+                jam-packed. WOW.
+              </p>
+            </td>
+          </tr>
+        </table>
+      </div>
     </div>
+    <br />
     <div id="google"></div>
     <div class="container">
-        <div class="box3">
-            <table>
-                <tr>
-                    <td>
-                        <h3>Google iframe</h3>
+      <div class="box box3">
+        <table>
+          <tr>
+            <td>
+              <h3>Google iframe</h3>
 
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14458.814597305804!2d121.4195156!3d25.0441293!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a7bec9ad74b1%3A0xa639904a89f26435!2z5Yue5YuV6YOo5Yue5YuV5Yqb55m85bGV572y5YyX5Z-65a6c6Iqx6YeR6aas5YiG572y5rOw5bGx6IG35qWt6KiT57e05aC0!5e0!3m2!1szh-TW!2stw!4v1696390559472!5m2!1szh-TW!2stw"
-                            width="" height="" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </td>
-                    <td>
-                        <h4>勞動部勞動力發展署北基宜花金馬分署泰山職業訓練場</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur. uptate nostrum, orem. placeat nostrum, harum magnam omnis, nihil eaque quaerat</p>
-
-                    </td>
-                </tr>
-            </table>
-        </div>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14458.814597305804!2d121.4195156!3d25.0441293!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a7bec9ad74b1%3A0xa639904a89f26435!2z5Yue5YuV6YOo5Yue5YuV5Yqb55m85bGV572y5YyX5Z-65a6c6Iqx6YeR6aas5YiG572y5rOw5bGx6IG35qWt6KiT57e05aC0!5e0!3m2!1szh-TW!2stw!4v1696390559472!5m2!1szh-TW!2stw"
+                width=""
+                height=""
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </td>
+            <td>
+              <h4>勞動部勞動力發展署北基宜花金馬分署泰山職業訓練場</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur. uptate nostrum, orem.
+                placeat nostrum, harum magnam omnis, nihil eaque quaerat
+              </p>
+            </td>
+          </tr>
+        </table>
+      </div>
     </div>
     <div id="top"><a href="#">Top</a></div>
-
-</body>
-
+  </body>
 </html>
