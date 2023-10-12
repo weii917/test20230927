@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pesudo</title>
+    <style>
+        body{
+            background-color: rgb(203, 231, 222);
+        }
+       
+        .nav {
+            padding-top: 1.5rem;
+            height: 7vh;
+            background-color: rgb(64, 96, 126);
+        }
+        .nav>a {
+            margin-left: 1rem;
+            padding: 0.5rem;
+            font-size: 1.8rem;
+            text-decoration: none;
+            background-color: rgb(123, 190, 194);
+            border-radius: 20px;
+            color: rgb(101, 124, 167);
+
+            /* border: 1px solid black;        */
+            
+        }
+        .container {
+            background-color: rgb(190, 214, 201);
+            width: 80%;
+            margin: auto;
+            display: flex;
+            flex-wrap: nowrap;
+        }
+        .nav> a:hover {
+            color: rgb(64, 114, 23);
+            transition-duration: 1s;
+        }
+       
+        .box1 {            
+            /* display: inline-block;*/
+            background-image: url('https://picsum.photos/id/91/400/300');
+            width: 100px;
+            height: 10vh;
+            margin-left:10px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 25px;
+        }
+        .box2 {            
+            /* display: inline-block; */
+            background-image: url('https://picsum.photos/id/91/400/300');
+            width: 100px;
+            height: 10vh;
+            margin-left:30px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 250px;
+        }
+        .box3 {            
+            /* display: inline-block;*/
+            background-image: url('https://picsum.photos/id/91/400/300');
+            width: 100px;
+            height: 10vh;
+            margin-left:30px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 25px;
+        }
+        .box1:hover {
+            background-image: url('https://picsum.photos/id/12/400/300');
+            transition-duration: 1s;
+            width: 250px;
+            height: 20vh;
+            border-radius: 0px;
+        }
+        .box2:hover {
+            background-image: url('https://picsum.photos/id/13/400/300');
+            transition-duration: 1s;
+            border-radius: 0px;
+            width: 250px;
+            height: 20vh;
+        }
+        .box3:hover {
+            background-image: url('https://picsum.photos/id/19/400/300');
+            transition-duration: 1s;
+            border-radius: 0px;
+            width: 250px;
+            height: 20vh;
+        }
+        input:focus{
+            background-color: blue;
+        }
+     
+    </style>
+</head>
+
+<body>
+    <nav class="nav">
+        <a href="">Home</a>
+        <a href="">About</a>
+        <a href="">Contact</a>
+    </nav>
+    <div class="container">
+        <a href="https://www.google.com/"> <div class="box1"></div></a>
+        <a href="https://www.w3schools.com/"> <div class="box2"></div></a>
+        <a href="https://picsum.photos/images"> <div class="box3"></div></a>
+    </div>
+    <div class="container">
+        <form action="">
+            <p>
+                <label for="">name</label>
+                <input type="text" name="" id="">
+            </p>
+            <p>
+                <label for="">mobile</label>
+                <input type="text" name="" id="">
+            </p>
+        </form>
+    </div>
+</body>
+
+</html>

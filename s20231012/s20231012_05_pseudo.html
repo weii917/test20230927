@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pesudo2</title>
+    <style>
+        table,tr,th,td{
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        table{
+            width: 100%;
+        }
+        .money{
+            text-align: right;
+        }
+        /* th,td{
+            width: 20%;
+        } */
+       .money::before{
+        content: "$ ";
+       }
+       .money::after{
+        content: "元 ";
+       }
+       .status::after{
+        content: "% ";
+       }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <table>
+            <tr>
+                <th width="15%">NAME</th>
+                <th width="20%">BONUS</th>
+                <th width="20%">績效成長</th>
+                <th>備註</th>
+
+            </tr>
+            <tr>
+                <td>DANNY</td>
+                <td class="money">3000</td>
+                <td class="status">50</td>
+                <td ></td>
+
+
+            </tr>
+            <tr>
+                <td>AMY</td>
+                <td class="money">2000</td>
+                <td class="status">60</td>
+                <td ></td>
+
+            </tr>
+            <tr>
+                <td>MMY</td>
+                <td class="money">2000</td>
+                <td class="status">50</td>
+                <td ></td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
