@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1,p,form,header,footer,section {
+            background-color: coral;
+            border: 2px solid black;
+            margin-top:2px;
+        }
+
+        span ,div{
+            width: 50px;
+            height: 50px;
+            background-color: cornflowerblue;
+        }
+
+        button {
+            background-color: crimson;
+        }
+
+        .display-block {
+            display: block;
+        }
+
+        a {
+            width: 50px;
+            height: 50px;
+            background-color: lightblue;
+        }
+
+        table,
+        tr,
+        td {
+            font-size: 1.2rem;
+            border-collapse: collapse;
+            border: 1px solid black;
+        }
+        table{
+            width: 100%;
+        }
+        .block{
+            display: block;
+        }
+        .inline-block{
+            display: inline-block;
+        }
+        .inline{
+            display: inline;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>block</h1>
+    <h1>可以換行可以調整大小</h1>
+    <h1>h1~h6</h1>
+    <p>p</p>
+    <form action="">form</form>
+    <header>header</header>
+    <footer>footer</footer>
+    <section>section</section>
+    <br><hr><br>
+
+    <span>123</span>
+    <span>123</span>
+    <span>123</span>
+    <span class="display-block">123</span>
+
+    <br>
+    <hr><br>
+
+    <button type="button">123</button>
+    <button type="button">123</button>
+    <button type="button">123</button>
+    <button type="button">123</button>
+
+    <br>
+    <hr><br>
+    <a href="">aaa</a>
+    <a href="">aaa</a>
+    <a class="display-block" href="">aaa</a>
+
+    <table>
+        <tr>
+            <td>類型</td>
+            <td>用法</td>
+            <td>
+                例如
+            </td>
+            <td>常見tag</td>
+        </tr>
+        <tr>
+            <td>Block</td>
+            <td>可大小可換行</td>
+            <td>
+                <h3>old</h3>
+                <P>Lorem ipsum dolor sit amet.</P>
+                <h3>new</h3>
+                <P>Lorem <span class="block">ipsum </span> dolor sit amet.</P>
+            </td>
+            <td>
+                <ul>
+                    <li>div</li>
+                    <li>h1~h6</li>
+                    <li>p</li>
+                    <li>form</li>
+                    <li>header</li>
+                    <li>footer</li>
+                    <li>section</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>Inline-Block</td>
+            <td>可大小，不可換行</td>
+            <td>
+                <h3>old</h3>
+                <P>Lorem ipsum dolor sit amet.</P>
+                <h3>new</h3>
+                <P>Lorem <span class="inline-block">ipsum </span> dolor sit amet.</P>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Inline</td>
+            <td>不可大小，不可換行</td>
+            <td>
+                <h3>old</h3>
+                <P>Lorem ipsum dolor sit amet.</P>
+                <h3>new</h3>
+                <P> <div class="inline">ipsum Lorem, ipsum dolor.</div> dolor sit amet.</P>
+            </td>
+            <td>
+                <ul>
+                    <li>span</li>
+                    <li>a</li>
+                    <li>img</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

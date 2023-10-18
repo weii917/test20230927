@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a{
+            width: 100px;
+            height: 100px;
+            background-color: brown;
+            display: block;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            background-image: url('https://picsum.photos/id/1/100/100');
+        }
+        .my-div{
+            width: 150px;
+            height: 150px;
+            background-image: url('https://picsum.photos/id/20/150/150');
+        }
+
+        img {
+            display: block;
+        }
+        input{
+            display: block;
+        }
+        li{
+            display: inline-block;
+            /* display: inline; */
+            width: 100px;
+            height: 100px;
+            background-color: lightpink;
+        }
+
+        .inline>li{
+            /* display: inline-block; */
+            display: inline;
+            width: 100px;
+            height: 100px;
+            background-color: lightpink;
+        }
+        span{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h3>a標籤是inline <span>加了block可改大小換行</span> </h3>
+    <a href="">123</a>
+    <a href="">123</a>
+    <a href="">123</a>
+    <hr>
+    <h3>a標籤<span>用div包住變成block</span></h3>
+
+    <div class="my-div">
+        <a href="">div-home</a>
+    </div>
+    <div class="my-div">
+        <a href="">div-about</a>
+    </div>
+    <div class="my-div">
+        <a href="">div-other</a>
+    </div>
+    <hr>
+
+    <div class="container">
+    <h3>img , input標籤是inline<span>加了block可改大小換行</span></h3>
+
+        <img src="https://picsum.photos/id/22/200/300" alt="">
+        <img src="https://picsum.photos/id/20/200/300" alt="">
+        <img src="https://picsum.photos/id/24/200/300" alt="">
+        <hr>
+
+
+        <input type="text">
+        <input type="text">
+        <input type="text">
+    </div>
+    <hr>
+
+    <div class="container">
+    <h3>li本block可改大小換行 ，<span>改成inline-block可改大小不換行</span> </h3>
+
+        <ul>
+            <li>amy</li>
+            <li>bob</li>
+            <li>cat</li>
+        </ul>
+    </div>
+    <hr>
+
+    <h3>li本block可改大小換行，<span>改成inline不改大小不換行</span> </h3>
+
+    <ul class="inline">
+        <li>amy</li>
+        <li>bob</li>
+        <li>cat</li>
+    </ul>
+</div>
+</body>
+</html>
