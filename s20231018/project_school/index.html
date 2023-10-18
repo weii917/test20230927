@@ -1,5 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        /* margin: 0px; */
+        box-sizing: border-box;
+      }
+      body {
+        background-color: rgb(151, 151, 151);
+      }
+
+      .container {
+        width: 80%;
+        margin: auto;
+      }
+
+      a {
+        /* display: inline-block; */
+        display: flex;
+        color: aliceblue;
+        text-decoration: none;
+        width: 100%;
+        height: 100%;
+        align-items: center; /*  使文本垂直居中 */
+        border: 4px solid white;
+      }
+      /* 這個BOX理是白色要放STUDENT TEACHER */
+      .box {
+        background-color: aliceblue;
+        display: flex;
+        border: 5px solid rgb(255, 255, 255);
+        margin-top: 40vh; /* 垂直置中 */
+        height: 25vh;
+        padding: 1px;
+      }
+      .box1,
+      .box2 {
+        width: 50%;
+        text-align: center; /*  使文本水平居中 */
+        /* height: 100%; 使文本垂直居中 */
+      }
+      /* 使h1寬度跟父元素依樣才能居中 */
+      .box1 h1,
+      .box2 h1 {
+        width: 100%;
+      }
+
+      .box1 > a {
+        border: 2px solid rgb(117, 116, 116);
+        color: rgba(151, 151, 151);
+      }
+      .box1 > a:hover {
+        background-color: rgba(151, 151, 151, 0.473);
+        border: 3px solid rgb(255, 255, 255);
+        color: rgb(255, 255, 255);
+      }
+      .box2 > a {
+        background-color: rgb(151, 151, 151);
+      }
+      .box2 > a:hover {
+        background-color: rgba(151, 151, 151, 0.473);
+        border: 3px solid rgb(255, 255, 255);
+        color: rgba(151, 151, 151);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="box">
+        <div class="box1">
+          <a href="./student/students.html">
+            <h1>Student</h1>
+          </a>
+        </div>
+        <div class="box2">
+          <a href="./teacher/teachers.html">
+            <h1>Teacher</h1>
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -74,4 +163,4 @@
     </div>
 </body>
 
-</html>
+</html> -->
