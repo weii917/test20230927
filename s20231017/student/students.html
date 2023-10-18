@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <style>
+        .container {
+            width: 80%;
+            margin: auto;
+            margin-top: 30px;
+            font-size: 1.2rem;
+        }
+        .nav {
+            width: 80%;
+            background-color: rgb(201, 201, 201);
+            padding-top: 1.5rem;
+            height: 7vh;    
+            margin: auto;        
+            text-align: left;
+            
+        }
+        .nav>a {
+            /* margin-left: 1rem; */
+            padding: 0.5rem;
+            font-size: 1.5rem;
+            text-decoration: none;            
+            border-radius: 20px;
+            color: rgb(49, 73, 118);
+
+            /* border: 1px solid black;        */
+            
+        }
+        table {
+            width: 100%;
+        }
+
+        table,
+        tr,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+        }
+     
+        td{
+            height: 30px;
+        }
+        /* odd奇數 even偶數 */
+        tr:nth-child(odd) {
+            color:rgb(123, 113, 172);
+        }
+
+        .bg-gray {
+            background-color: rgb(210, 210, 210);
+        }
+        /* 背景色 */
+        .bg-blue {
+            background-color: rgb(149, 152, 211);
+        }
+        /* 文字靠右 */
+        .text-right{
+            text-align:right;            
+        }
+
+        .text-right > a{
+            text-decoration: none;
+        }
+        /* 第一行的顏色是白色 */
+        tr:nth-child(1){           
+            color: white;
+        }
+        /* edit delete顏色 */
+        .text-red >a {
+            color: crimson;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">  
+        <a href="../index.html">Home</a>     
+        <a href="./students.html">Student</a>
+        <a href="../teacher/teachers.html">Teacher</a>
+    </div>
+    <div class="container text-right">
+        <h3>Students List</h3>
+        <a href="./create.html">Add</a>
+        <table>
+            <tr class="bg-blue">
+                <th>id</th>
+                <th>name</th>
+                <th>mobile</th>
+                <th>pic</th>
+                <th>operate</th>
+
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <td><a href="./edit.html?id=1">amy</a></td>
+                <td>0911-111-111</td>
+                <td><img src="https://picsum.photos/id/1/100/100" alt="" srcset=""><br> amy.jpg</td>
+                <td class="text-red"><a href="./edit.html?id=1">Edit</a><br><a href="./del.html?id=1">Delete</a></td>
+            </tr>
+            <tr class="bg-gray">
+                <td class="bg-gray">2</td>
+                <td><a href="./edit.html?id=2">bob</a></td>
+                <td>0922-222-222</td>
+                <td><img src="https://picsum.photos/id/30/100/100" alt="" srcset=""><br>bob.jpg</td>
+                <td class="text-red"><a href="./edit.html?id=2">Edit</a><br><a href="./del.html?id=2">Delete</a></td>
+                
+
+            </tr>
+            <tr>
+                <td>3</td>
+                <td><a href="./edit.html?id=3">cat</a></td>
+                <td>0933-333-333</td>
+                <td><img src="https://picsum.photos/id/40/100/100" alt="" srcset=""><br>cat.jpg</td>
+                <td class="text-red"><a href="./edit.html?id=3">Edit</a><br><a href="./del.html?id=3">Delete</a></td>
+                
+
+            </tr>
+            <tr class="bg-gray">
+                <td >4</td>
+                <td><a href="./edit.html?id=4">amy</a></td>
+                <td>0911-111-111</td>
+                <td><img src="https://picsum.photos/id/24/100/100" alt="" srcset=""><br>amy.jpg</td>
+                <td class="text-red"><a href="./edit.html?id=4">Edit</a><br><a href="./del.html?id=4">Delete</a></td>
+                
+
+            </tr>
+            <tr>
+                <td>5</td>
+                <td><a href="./edit.html?id=5">bob</a></td>
+                <td>0922-222-222</td>
+                <td><img src="https://picsum.photos/id/8/100/100" alt="" srcset=""><br>bob.jpg</td>
+                <td class="text-red"><a href="./edit.html?id=5">Edit</a><br><a href="./del.html?id=5">Delete</a></td>
+                
+
+            </tr>
+            <tr class="bg-gray">
+                <td>6</td>
+                <td><a href="./edit.html?id=6">cat</a></td>
+                <td>0933-333-333</td>
+                <td><img src="https://picsum.photos/id/33/100/100" alt="" srcset=""><br>cat.jpg</td>
+                <td class="text-red"><a href="./edit.html?id=6">Edit</a><br><a href="./del.html?id=6">Delete</a></td>              
+
+            </tr>
+            
+        </table>
+    </div>
+</body>
+
+</html>

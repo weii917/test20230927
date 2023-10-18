@@ -12,7 +12,26 @@
             margin-top: 30px;
             font-size: 1.2rem;
         }
+        .nav {
+            width: 80%;
+            background-color: rgb(201, 201, 201);
+            padding-top: 1.5rem;
+            height: 7vh;    
+            margin: auto;        
+            text-align: left;
+            
+        }
+        .nav>a {
+            /* margin-left: 1rem; */
+            padding: 0.5rem;
+            font-size: 1.5rem;
+            text-decoration: none;            
+            border-radius: 20px;
+            color: rgb(49, 73, 118);
 
+            /* border: 1px solid black;        */
+            
+        }
         table {
             width: 100%;
         }
@@ -62,6 +81,11 @@
 </head>
 
 <body>
+    <div class="nav">  
+        <a href="../index.html">Home</a>     
+        <a href="./students.html">Student</a>
+        <a href="../teacher/teachers.html">Teacher</a>
+    </div>
     <div class="container text-right">
         <h3>Students List</h3>
         <a href="./create.html">Add</a>
@@ -86,7 +110,7 @@
                 <td class="bg-gray">2</td>
                 <td><a href="./edit.html?id=2">bob</a></td>
                 <td>0922-222-222</td>
-                <td>bob.jpg</td>
+                <td><img src="https://picsum.photos/id/30/100/100" alt="" srcset=""><br>bob.jpg</td>
                 <td class="text-red"><a href="./edit.html?id=2">Edit</a><br><a href="./del.html?id=2">Delete</a></td>
                 
 
@@ -95,7 +119,7 @@
                 <td>3</td>
                 <td><a href="./edit.html?id=3">cat</a></td>
                 <td>0933-333-333</td>
-                <td>cat.jpg</td>
+                <td><img src="https://picsum.photos/id/40/100/100" alt="" srcset=""><br>cat.jpg</td>
                 <td class="text-red"><a href="./edit.html?id=3">Edit</a><br><a href="./del.html?id=3">Delete</a></td>
                 
 
@@ -104,7 +128,7 @@
                 <td >4</td>
                 <td><a href="./edit.html?id=4">amy</a></td>
                 <td>0911-111-111</td>
-                <td>amy.jpg</td>
+                <td><img src="https://picsum.photos/id/24/100/100" alt="" srcset=""><br>amy.jpg</td>
                 <td class="text-red"><a href="./edit.html?id=4">Edit</a><br><a href="./del.html?id=4">Delete</a></td>
                 
 
@@ -113,7 +137,7 @@
                 <td>5</td>
                 <td><a href="./edit.html?id=5">bob</a></td>
                 <td>0922-222-222</td>
-                <td>bob.jpg</td>
+                <td><img src="https://picsum.photos/id/8/100/100" alt="" srcset=""><br>bob.jpg</td>
                 <td class="text-red"><a href="./edit.html?id=5">Edit</a><br><a href="./del.html?id=5">Delete</a></td>
                 
 
@@ -122,7 +146,7 @@
                 <td>6</td>
                 <td><a href="./edit.html?id=6">cat</a></td>
                 <td>0933-333-333</td>
-                <td>cat.jpg</td>
+                <td><img src="https://picsum.photos/id/33/100/100" alt="" srcset=""><br>cat.jpg</td>
                 <td class="text-red"><a href="./edit.html?id=6">Edit</a><br><a href="./del.html?id=6">Delete</a></td>              
 
             </tr>
