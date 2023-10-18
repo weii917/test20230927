@@ -34,9 +34,12 @@
 
         .text-center {
             text-align: center;
-        }       
+        }
+        input[type="file"]{
+            margin-left: 155px;
+        }
         input[type="submit"]{
-            width: 20%;
+            width: 30%;
         }
         td:nth-child(1){
             background-color: rgb(149, 152, 211);
@@ -49,7 +52,7 @@
 <body>
 
     <div class="container text-center ">
-        <h3>Create</h3>
+        <h3>Students Create</h3>
         <form action="" enctype="multipart/form-data">
             <table>
                 <tr>
@@ -60,16 +63,16 @@
                 </tr>
                 <tr>
                     <td>
-                        <label for="mail">&nbsp;&nbsp;&nbsp;&nbsp;mail</label>
-                        <input type="text" name="mail" id="mail">
+                        <label for="mobile">mobile</label>
+                        <input type="text" name="mobile" id="mobile">
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <label for="mobile">mobile</label>
-                        <input type="text" name="mobile" id="mobile">
+                        <!-- <label for="file">file</label> -->
+                        <input type="file" name="file" id="file">
                     </td>
-                </tr>              
+                </tr>
                 <tr>
                     <td>
 
