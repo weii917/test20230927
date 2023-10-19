@@ -1,21 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .pos-static{
-            left:30px;
+        .container{
+            height: 5000px;
         }
-        .pos-relative{
+        .pos-static {
+            left: 30px;
+        }
+
+        .pos-relative {
             position: relative;
-            left:30px;
+            left: 30px;
+        }
+        .pos-fixed {           
+            position: fixed;
+            right: 100px;
+            bottom: 100px;
+        }
+
+        .nav-fixed {
+            position: fixed;
+            top: 0;
+            height: 10vh;
+            width: 100%;
+            background-color: cadetblue;
+            z-index: 100;
+        }
+
+        .box-relative{
+            position: relative;
+            width: 800px;
+            height: 800px;
+            background-color: lightcoral;
+        }
+
+        .box-absoulte{
+            position: absolute;
+            width: 100px;
+            height: 100px;
+        }
+
+        .box1{
+            background-color: blue;
+            
+        }
+        .box2{
+            background-color: yellowgreen;
+            top: 0;
+            right: 0;
+            
+        }
+        .box3{
+            background-color: purple;
+            bottom: 0;
+            right: 0;
+            
+        }
+        .box4{
+            background-color: gold;
+            bottom: 0;
+            left: 0;
+            
+        }
+
+        .footer-fixed {
+            position: fixed;
+            bottom: 0;
+            height: 10vh;
+            width: 100%;
+            background-color: rgb(174, 158, 245);
+            z-index: 100;
         }
     </style>
 </head>
+
 <body>
     <div class="container">
+        <nav class="nav-fixed">
+            <h1>nav</h1>
+        </nav>
         <h3>position</h3>
         <br>
         <hr>
@@ -28,12 +96,31 @@
         <h4>relative</h4>
         <p class="pos-relative">Lorem ipsum dolor sit amet.</p>
 
+        
         <br>
         <hr>
         <br>
-        <h4>relative</h4>
-        <p class="pos-relative">Lorem ipsum dolor sit amet.</p>
+        <h4>absolute</h4>
+        <div class="box-relative">
+            <div class="box-absoulte box1"></div>
+            <div class="box-absoulte box2"></div>
+            <div class="box-absoulte box3"></div>
+            <div class="box-absoulte box4"></div>
+        </div>
 
+
+        <br>
+        <hr>
+        <br>
+        <h4>fixed</h4>
+        <p class="pos-fixed">Lorem ipsum dolor sit amet.</p>
+        <a href="#" class="pos-fixed">top</a>
+
+        
     </div>
+   <footer class="footer-fixed">
+    <h1>footer</h1>
+   </footer>
 </body>
+
 </html>
