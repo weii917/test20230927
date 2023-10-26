@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border;
+            margin: 0;
+        }
+
+        body {
+            background-color: rgb(255, 246, 239);
+
+        }
+        header{
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            height: 10vh;
+            background-color: rgb(212, 117, 79,0.7);
+            
+        }
+        h1{
+            font-size: 3rem;
+            color: rgb(255, 238, 129);
+            margin-left: 3rem;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            position: sticky;
+            top:0;
+            width: 100%;
+            height: 8vh;
+            background-color: rgb(235, 156, 100);
+            /* margin-bottom: 10vh; */
+
+        }
+        ul > li{
+            display: inline-block;
+        }
+        a {
+            text-decoration: none;
+            color: aliceblue;
+            font-size: 1.5rem;
+            margin-left: 3rem;
+        }
+
+        a:hover{
+            font-size: 1.8rem;
+            color: rgb(240, 255, 143);
+
+        }
+
+        .container-1 {
+            /* background-color: blue; */
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 80%;
+            height: 70vh;
+            margin: auto;
+            /* padding-top: 10vh; */
+            margin-bottom: 15vh;
+
+        }
+
+        .container-2 {
+            /* background-color: rgb(74, 132, 42); */
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            width: 80%;
+            height: 70vh;
+            margin: auto;    
+            margin-top: 10vh;        
+            margin-bottom: 10vh;
+
+        }
+
+        .box-1 {
+            padding-top: 80px;       
+            /* background-color: aqua; */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            width: 50%;
+        }
+
+        .box {
+            
+            width: 23%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;           
+
+        }
+        img {
+            width: 200px;
+            height: 200px;
+            margin-bottom: 30px;
+            border: 2px solid rgb(244, 200, 117);
+            box-shadow: 2px 2px 6px black;
+
+        }
+
+        .img-1 {
+            width: 400px;
+            height: 400px;
+            margin-bottom: 30px;
+            border-radius: 40px;
+        }
+
+     
+
+        p {
+            font-size: 1.5rem;
+        }
+
+        h2 {
+            margin-top: 15px;
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <header><a href="#"><h1> Ipsum Store</h1></a></header>
+    <nav class="nav">
+        <ul>
+            <li>
+                <a href="#item1">萬聖節裝扮</a>
+            </li>
+            <li>
+                <a href="#item2">萬聖節飾品</a>
+            </li>
+        </ul>
+    </nav>
+    <div id="item1"></div>
+    <div class="container-1">
+        <div class="box-1"> <img class="img-1" src="./images/1.jpg" alt="">
+            <p>Lorem ipsum dolor sit ametipsum dolor sit amet.</p>
+            <h2>NT$300元</h2>
+        </div>
+        <div class="box-1"> <img class="img-1" src=" ./images/2.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet.</p>
+            <h2>NT$200元</h2>
+
+        </div>
+        <div class="box-1"> <img class="img-1" src=" ./images/3.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet.</p>
+            <h2>NT$150元</h2>
+
+        </div>
+    </div>
+    <div id="item2"></div>
+    <div class="container-2">
+        <div class="box box5"><img src="./images/5.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet.</p>
+            <h2>NT$20元</h2>
+        </div>
+        <div class="box box6"><img src="./images/6.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet.</p>
+            <h2>NT$30元</h2>
+        </div>
+        <div class="box box4"><img src="./images/4.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet.</p>
+            <h2>NT$40元</h2>
+        </div>
+        <div class="box box7"><img src="./images/7.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet.</p>
+            <h2>NT$60元</h2>
+        </div>
+        <div class="box box8"><img src="./images/8.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet.</p>
+            <h2>NT$50元</h2>
+        </div>
+        <div class="box box9"><img src="./images/9.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet.</p>
+            <h2>NT$60元</h2>
+        </div>
+        <div class="box box10"><img src="./images/10.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet.</p>
+            <h2>NT$50元</h2>
+        </div>
+        <div class="box box11"><img src="./images/11.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet.</p>
+            <h2>NT$30元</h2>
+        </div>
+    </div>
+</body>
+
+</html>
