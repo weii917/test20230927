@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <style>
+        .my-bg-color{
+            background-color: rgb(218, 234, 239,0.4);
+        }
+        .img-big {
+            width: 1920px;
+            height: 800px;
+        }
+      
+        .img-card {
+            width: 400px;
+            height: 300px;            
+        }
+
+        .img-box3 {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body class="my-bg-color">
+    <!-- fixed-top sticky-top -->
+    <nav class="navbar navbar-expand-lg sticky-top " style="background-color: #e3f2fd;">
+        <div class="container-fluid">
+            <a class="navbar-brand ms-2" href="#">Japan</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#box1">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#box2">Card</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#box3">Collapse</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">日本</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <!-- navbar用文字的 -->
+                    <span class="navbar-text me-3">
+
+                    </span>
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Logout</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div id="box1"></div>
+    <div class="container-fluid mb-5">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="5000">
+                    <img class="img-big" src="./images/1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <img class="img-big" src="./images/2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <img class="img-big" src="./images/3.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <div id="box2"></div>
+
+    <div class="container mb-3 mx-auto">
+        <div class="row">
+            
+            <div class="card col-sm-4 col-12" >
+                <div class="box">
+                     <img  src="./images/4.jpg" class="card-img-top" alt="..."> 
+                </div>
+              
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                </div>
+                <div class="card-body text-end">
+                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                        data-bs-target=".multi-collapse-a" aria-expanded="false"
+                        aria-controls="multiCollapseExample1-a multiCollapseExample2-a">北海道</button>
+                </div>
+
+
+            </div>
+            <div class="card col-sm-4 col-12 ">
+                <div class="box">
+                    <img src="./images/5.jpg" class="card-img-top" alt="...">
+                </div>
+                
+                <div class="card-body ">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                </div>
+                <div class="card-body text-end">
+                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                        data-bs-target=".multi-collapse-b" aria-expanded="false"
+                        aria-controls="multiCollapseExample1-b multiCollapseExample2-b">九州</button>
+                </div>
+
+            </div>
+            <div class="card col-sm-4 col-12 " >
+                <div class="box">
+                    <img  src="./images/6.jpg" class="card-img-top" alt="...">
+                </div>
+                
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                </div>
+                <div class="card-body text-end">
+                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                        data-bs-target=".multi-collapse-c" aria-expanded="false"
+                        aria-controls="multiCollapseExample1-c multiCollapseExample2-c">東京</button>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <div id="box3"></div>
+    <div class="container">
+        <!-- <p class="d-inline-flex gap-1"> -->
+        <!-- <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                    data-bs-target=".multi-collapse-a" aria-expanded="false"
+                    aria-controls="multiCollapseExample1-a multiCollapseExample2-a">北海道</button> -->
+        <!-- <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                    data-bs-target=".multi-collapse-b" aria-expanded="false"
+                    aria-controls="multiCollapseExample1-b multiCollapseExample2-b">九州</button>
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                    data-bs-target=".multi-collapse-c" aria-expanded="false"
+                    aria-controls="multiCollapseExample1-c multiCollapseExample2-c">東京</button> -->
+        <!-- </p> -->
+        <div class="row">
+            <div class="col-8">
+                <div class="collapse multi-collapse-a" id="multiCollapseExample1-a">
+                    <div class="card card-body">
+                        Some placeholder content for the first collapse component of this multi-collapse example.
+                        This panel is
+                        hidden by default but revealed when the user activates the relevant trigger.
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="collapse multi-collapse-a" id="multiCollapseExample2-a">
+                    <div class="card card-body">
+                        <div class="">
+                            <img class="img-box3" src="./images/4.jpg" alt="">
+                        </div>
+                        <!-- Some placeholder content for the second collapse component of this multi-collapse example. This panel is
+                    hidden by default but revealed when the user activates the relevant trigger. -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-8">
+                <div class="collapse multi-collapse-b" id="multiCollapseExample1-b">
+                    <div class="card card-body">
+                        Some placeholder content for the first collapse component of this multi-collapse example.
+                        This panel is
+                        hidden by default but revealed when the user activates the relevant trigger.
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="collapse multi-collapse-b" id="multiCollapseExample2-b">
+                    <div class="card card-body">
+                        <div class="">
+                            <img class="img-box3" src="./images/5.jpg" alt="">
+                        </div>
+                        <!-- Some placeholder content for the second collapse component of this multi-collapse example. This panel is
+                      hidden by default but revealed when the user activates the relevant trigger. -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-8">
+                <div class="collapse multi-collapse-c" id="multiCollapseExample1-c">
+                    <div class="card card-body">
+                        Some placeholder content for the first collapse component of this multi-collapse example.
+                        This panel is
+                        hidden by default but revealed when the user activates the relevant trigger.
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="collapse multi-collapse-c" id="multiCollapseExample2-c">
+                    <div class="card card-body">
+                        <div class="">
+                            <img class="img-box3" src="./images/6.jpg" alt="">
+                        </div>
+                        <!-- Some placeholder content for the second collapse component of this multi-collapse example. This panel is
+                      hidden by default but revealed when the user activates the relevant trigger. -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+</body>
+
+</html>
